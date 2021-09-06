@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Google Lens VS MobileNet</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <center>
+            <div>
+                <div><h3>Google Lens</h3></div>
+                <div><h3>VS</h3></div>
+                <div><h3>MobileNet</h3></div>
+            </div>
+            <hr>
+            <span id="span_left">
+                <div><h4>Image</h4></div>
+                <div><img src=Pillow.jpeg></div>
+            </span>
+                <span id="span_right">
+                    <span>
+                        <p class="btn result_para_tag GL">Output On Google Lens: 
+                            <span id="result_GL_name"></span> 
+                          </p>    
+                    </span>
+                    <span>
+                        <p class="btn result_para_tag MN">Output On MobileNet: 
+                            <span id="result_MN_name"></span> 
+                          </p>    
+                    </span>
+                    <h4>Result - </h4>
+                    <hr>
+                    <label id="Result"></label>
+                </span> 
+        
+    </body>
+</html>
